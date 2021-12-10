@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hamit Sehjal</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="info.css">
+        <script  src="info.js"></script>
+
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="center">
+                    <img  src="pics/pic_2.png" alt="Seneca" >
+                    <span class="honesty">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Please fill-In the Form</span>
+                </div>
+            </header>
+    
+            <nav >
+                <div class="center">
+                    <ul>
+                        <li><a href="honesty.html"><span class="list">Honesty</span></a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="info.html"><span class="list">Information</span></a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="reflection.html"><span class="list">Reflection</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <aside>
+                <span id="errorsHeading">Errors</span>
+                <br/><br/>
+                <div >
+                    <ul id="errors">
+
+                    </ul>
+                </div>
+                
+            </aside>
+    
+            <section class="main formInput">
+                <h3 class="para red">Here we go!!</h3>
+                <form name="signup" method="post" action=" https://httpbin.org/post" onsubmit="return formValidation(this);">
+                    <fieldset>
+                        <legend class="para ">Personal Information</legend>
+                        <p>
+                            <label for="firstname">
+                              <span class="red">FirstName: </span>
+                              <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <input type="text" id="firstname" name="firstname" value='' required placeholder="FirstName">
+                          </p>
+                          <p>
+                              <label for="lastname">
+                                  <span class="red">LastName: </span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <input type="text" name="lastname" id="lastname" value='' required placeholder="LastName">
+                          </p>
+                          <input type="hidden" name="lastName" id="lastName" value="Sehjal" />
+                          <input type="hidden" name="studentId" id="studentId" value="139238208" />
+                          <p>
+                              <label for="username">
+                                  <span class="red">Username: </span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <input type="text" name="username" id="username" value='' required placeholder="Username">
+                          </p>
+                          <p>
+                              <label for="password1">
+                                  <span class="red">Password: </span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <input type="password" name="password1" id="password1" value='' required placeholder="Password">
+                          </p>
+                          <p>
+                              <label for="password2">
+                                  <span class="red">Confirm your Password: </span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <input type="password" name="password2" id="password2" value='' required placeholder="confirm the Password">
+                          </p>
+                          <p>
+                              <label for="status1">
+                                  <span class="red">Education Status:</span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <ul class="other">
+                                  <li><span class="red">Graduated</span><input type="radio" name="status" id="status1" value="Graduated" checked ></li>
+                                  <li><span class="red">Current Enrolled</span><input type="radio" name="status" id="status2" value="Current Enrolled" ></li>
+                                  <li><span class="red">Did not Graduate</span><input type="radio" name="status" id="status3" value="Did not Graduate" ></li>
+                              </ul>
+                          <p>
+                              <label for="email">
+                                  <span class="red">Email: </span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <input type="email" name="email" id="email" required placeholder="Email">
+                          </p>
+                          <p>
+                              <label for="age">
+                                  <span class="red">Age: </span>
+                                  <strong><abbr title="required">*</abbr></strong>
+                              </label>
+                              <input type="number" name="age" id="age" value=23 min=16 max=68 required>
+                          </p>
+                    </fieldset>
+                    <br/><br/>
+                    <label for="submission">
+                        <span class="red">Submit your Information: </span>
+                    </label>
+                    <input type="submit" name="submission" id="submission" value="SUBMIT" onclick="return clearErrors();">
+                    <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <label for="reset">
+                        <span class="red">Re-Enter the Information: </span>
+                    </label>
+                    <input type="reset" name="reset" id="reset" value="CLEAR" onclick="return clearErrors();">
+                </form>
+            </section>
+            <br/><br/><br/><br/><br/>
+            <footer id="Ifooter">
+                &nbsp;&nbsp;&nbsp;&nbsp;&#169;<span class="para">2021 Hamit Sehjal</span>
+                <div class="git">
+                   <a class="link" href="https://github.com/hamitsehjal/WEB222.git">My GitHub Link:</a>
+                </div>
+            </footer>
+           
+        </div>
+       
+        
+    </body>
+</html>
