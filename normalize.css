@@ -1,0 +1,81 @@
+html{background-color:#F3F3F3;}
+
+#container{width: 1100px;
+            margin:0 auto;}
+
+
+body{
+    overflow-y: scroll;
+	overflow-x:hidden;
+    font-family: Tahoma, sans-serif;
+    font-size: 11pt;
+    background: #ffffff;
+    color: #000000;
+}
+.honesty{
+        font-weight: bolder;
+        font-size: 2em;
+
+}
+header{color:brown;}
+
+.center{max-width: 960px;
+        margin:0 auto;
+        padding-left: 20px;
+        padding-right:20px;
+        padding-top:5px;
+    }
+.main{min-height: 520px;}
+
+nav{border: #000 solid 1px;
+    border-radius: .5em; 
+    margin-bottom: 15px;
+    background: #343434;
+    
+    }
+
+nav ul{list-style-type: none;
+       list-style-position:outside;
+       padding:0%;
+       margin-top: 5px ;
+       }
+
+nav ul li{display:inline-block;
+          padding-left:10px;
+          padding-right:10px;
+          }
+
+nav ul li a{
+            font-size:95%;
+            font-weight: bolder;
+            font: 95% Tahoma, sans-serif;
+            color: #ddd;
+
+            }
+
+nav ul li a:hover{
+                  color: #fff;
+                  }
+
+.para{font-size: 1.2em;}
+#page{font-size: 1.5em;
+      font-style: italic;}
+
+.list{font-size:11pt;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bolder;}
+#Hfooter{
+    width: 100%;
+                  height:30px;
+    background: #343434;
+    border: #000 solid 1px;    
+    color: #eee;
+    border:black solid 1px;
+       padding-top:5px;
+       padding-bottom: 5px;
+       border-radius: .5em;
+      margin-bottom: 5px; }
+
+.red  {color:brown;font-weight: bolder;}
+
+img{width:300px;
+    height:70px;
+    align-content: center;}
